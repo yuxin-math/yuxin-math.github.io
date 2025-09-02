@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="Cleaning BibDesk bib files">
+    <meta name="author" content="Yu Xin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Bib Files</title>
+</head>
+<style>
+    body {
+        background: DarkSeaGreen;
+    }
+    hr {
+        border: none;
+        height: 2px;
+        background-color: #000;
+    }
+    pre {
+        background: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+<body>
+
+<h1>Cleaning BibDesk Bib Files with Python</h1>
+<em>(Last updated: September 2, 2025)</em>
+
+<p>
+I use <b>BibDesk</b> to manage my bibliography. When exporting, BibDesk often adds many non-standard fields 
+such as <code>date-added</code>, <code>date-modified</code>, <code>priority</code>, <code>file</code>, 
+and <code>bdsk-url-1</code>. These fields are useless for LaTeX. I prefer to remove them while keeping 
+all academic fields (author, title, journal, year, doi, url, etc.).
+</p>
+
+<h2>Workflow (MacOS)</h2>
+<p>
+1. Manage references in <b>BibDesk</b>.<br>
+2. Export the database with <em>all fields</em>.<br>
+3. Download <a href="clean_bib.py">clean_bib.py</a>
+4. Put the Python script and your <code>.bib</code> file in the same folder, and run the script with terminal (make sure to locate yourself in the targeted folder first): <code>python3 clean_bib.py input.bib output.bib</code>
+</p>
+
+</body>
+</html>
