@@ -7,45 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <title>Yu Xin</title>
-</head>
-<style>
+<style type="text/css">
     body {
-background: DarkSeaGreen;
+        max-width: 74em;
+        margin: 3em 3em;
+        padding: 0 1.5em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 17px;
+        line-height: 1.6;
+        color: #222;
+        background: #fbfaf7;
     }
-    hr {
-        border: none;
-        height: 2px;
-        background-color: #000;
+    h1 {
+        font-size: 2em;
+        font-weight: normal;
+        margin: 0 0 1.5em;
+    }
+    h2 {
+        font-size: 1.25em;
+        font-weight: normal;
+        margin: 2em 0 0.6em;
+        padding-bottom: 0.2em;
+        border-bottom: 1px solid #bbb;
+    }
+    p {
+        margin: 0 0 0.9em;
+    }
+    a {
+        color: #1a4d8f;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .page {
+        display: grid;
+        grid-template-columns: minmax(0, 44em) 1fr;
+        column-gap: 4em;
+        align-items: start;
+    }
+    .main > h2:first-child {
+        margin-top: 0;
+    }
+    .aside img {
+        display: block;
+        width: 100%;
+        max-width: 365px;
+    }
+    @media (max-width: 700px) {
+        .page {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
+</head>
 <body>
 
 <h1>Yu Xin</h1>
-<em>(Last updated: Oct 16, 2025)</em>
+
+<div class="page">
+  <div class="main">
+<!--<em>(Last updated: Aug 14, 2026)</em>
 <p>
 Contact Info<br>
-Office 010, Building 216 (Math)<br>
 Department of Mathematics<br>
 Bar-Ilan University<br>
-Ramat Gan, 5290002<br>
+Ramat Gan 5290002, Israel<br>
 Email: yu[dot]xin[at]biu[dot]ac[dot]il
 </p>
 
-<p>I am a postdoctoral researcher at Bar-Ilan University, working with <a href="https://u.math.biu.ac.il/~kaplanea/">Eyal Kaplan</a>.<br>
-Before that, I graduated from Brandeis University in 2023, under the supervision of <a href="https://sites.google.com/brandeis.edu/offen/home">Omer Offen</a>.<br>
- I work on number theory and representation theory.<br>
+
+<p>I am a postdoctoral researcher in mathematics at Bar-Ilan University, working with <a href="https://cris.biu.ac.il/en/persons/eyal-kaplan/">Eyal Kaplan</a>.<br>
 Here is my <a href="CV_YuXin.pdf">CV</a>.<br>
 Here is my <a href="ResearchStatement_YuXin.pdf">Research Statement</a>. 
+</p>
+
+
+<h2>Employment and Education</h2>
 <p>
+Bar-Ilan University, Postdoctoral Researcher in Mathematics, October 2023&ndash;present<br>
+Brandeis University, Ph.D. in Mathematics, August 2023 (advisor: <a href="https://sites.google.com/brandeis.edu/offen/home">Omer Offen</a>)<br>
+Brandeis University, Master of Arts in Mathematics, May 2017<br>
+Tongji University, Bachelor of Science in Mathematics and Applied Mathematics, July 2015
+</p>
+-->
+
+<h2>Research Interests</h2>
+<p>Automorphic representations, period integrals, Eisenstein series, Langlands gamma factors, and Rankin&ndash;Selberg integrals</p>
 
 <h2>Publications</h2>
-P. Barron and Y. Xin, <a href="https://doi.org/10.1016/j.jnt.2025.01.015">On the Rankin-Selberg gamma factor of simple supercuspidal representations of the unitary group for p-adic local fields</a>, J. Number Theory 271 (2025), 526-547<br>
+<p>1. Y. Xin, <a href="https://doi.org/10.1007/s40993-026-00764-9">Explicit formulas for the Bessel models: odd general spin groups</a>, Research in Number Theory 12 (2026), Article 77.</p>
+<p>2. P. Barron and Y. Xin, <a href="https://doi.org/10.1016/j.jnt.2025.01.015">On the Rankin&ndash;Selberg gamma factor of simple supercuspidal representations of the unitary group for p-adic local fields</a>, Journal of Number Theory 271 (2025), 526&ndash;547.</p>
 
 <h2>Preprints</h2>
-<!-- <em>On the Sp_2n-distinguished automorphic spectrum of U_2n</em>, in preparation, <a href="">arXiv</a> <br>-->
-K. Wang and Y. Xin, On the Sp_2n-distinguished automorphic spectrum of U_2n, submitted, <a href="https://arxiv.org/abs/2412.05518">arXiv</a><br>
-Y. Xin, Explicit formulas for the Bessel models: odd general spin groups, submitted, <a href="https://arxiv.org/abs/2509.03278">arXiv</a>
-</p>
+<p>1. K. Wang and Y. Xin, On the Sp<sub>2n</sub>-distinguished spectrum of U<sub>2n</sub>, preprint, <a href="https://arxiv.org/abs/2412.05518">arXiv:2412.05518</a>.</p>
 
 <!--
 <h2>Planned Activities</h2>
@@ -59,5 +114,10 @@ I plan to attend the following conferences:<br>
 
 <a href="miscellanous.html">Miscellanous</a>
 -->
-
+</div>
+  <div class="aside">
+    <img src="photo.jpeg" alt="Yu Xin">
+  </div>
+</div>
+</body>
 </html>
