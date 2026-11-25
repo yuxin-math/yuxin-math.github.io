@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <meta name="description" content="postdoc">
     <meta name="keywords" content="Math, Bar-Ilan, Brandeis">
     <meta name="author" content="Yu Xin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <title>Yu Xin</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style type="text/css">
     body {
-        max-width: 74em;
-        margin: 3em 3em;
-        padding: 0 1.5em;
+        margin: 0;
         font-family: Georgia, "Times New Roman", Times, serif;
         font-size: 17px;
         line-height: 1.6;
@@ -40,33 +40,43 @@
     a:hover {
         text-decoration: underline;
     }
-    .page {
-        display: grid;
-        grid-template-columns: minmax(0, 44em) 1fr;
-        column-gap: 4em;
-        align-items: start;
+    .hero {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
     }
-    .main > h2:first-child {
-        margin-top: 0;
-    }
-    .aside img {
+    .hero img {
         display: block;
         width: 100%;
-        max-width: 365px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
     }
-    @media (max-width: 700px) {
-        .page {
-            grid-template-columns: 1fr;
-        }
+    .main {
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        margin: 100vh 0 0;
+        margin-top: 100dvh;
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 3em max(1.5em, calc((100% - 44em) / 2)) 4em;
+        background: #fbfaf7;
     }
 </style>
 </head>
 <body>
 
-<h1>Yu Xin</h1>
+<div class="hero">
+    <img src="background.jpg" alt="">
+</div>
 
-<div class="page">
-  <div class="main">
+<div class="main">
+<h1>Yu Xin</h1>
 <!--<em>(Last updated: Aug 14, 2026)</em>
 <p>
 Contact Info<br>
@@ -85,7 +95,7 @@ Here is my <a href="ResearchStatement_YuXin.pdf">Research Statement</a>.
 
 <h2>Employment and Education</h2>
 <p>
-Bar-Ilan University, Postdoctoral Researcher in Mathematics, October 2023&ndash;present<br>
+Bar-Ilan University, Postdoctoral Researcher in Mathematics, October 2023–present<br>
 Brandeis University, Ph.D. in Mathematics, August 2023 (advisor: <a href="https://sites.google.com/brandeis.edu/offen/home">Omer Offen</a>)<br>
 Brandeis University, Master of Arts in Mathematics, May 2017<br>
 Tongji University, Bachelor of Science in Mathematics and Applied Mathematics, July 2015
@@ -93,11 +103,11 @@ Tongji University, Bachelor of Science in Mathematics and Applied Mathematics, J
 -->
 
 <h2>Research Interests</h2>
-<p>Automorphic representations, period integrals, Eisenstein series, Langlands gamma factors, and Rankin&ndash;Selberg integrals</p>
+<p>Rankin–Selberg integrals, gamma factors, period integrals, distinguished representations</p>
 
 <h2>Publications</h2>
 <p>1. Y. Xin, <a href="https://doi.org/10.1007/s40993-026-00764-9">Explicit formulas for the Bessel models: odd general spin groups</a>, Research in Number Theory 12 (2026), Article 77.</p>
-<p>2. P. Barron and Y. Xin, <a href="https://doi.org/10.1016/j.jnt.2025.01.015">On the Rankin&ndash;Selberg gamma factor of simple supercuspidal representations of the unitary group for p-adic local fields</a>, Journal of Number Theory 271 (2025), 526&ndash;547.</p>
+<p>2. P. Barron and Y. Xin, <a href="https://doi.org/10.1016/j.jnt.2025.01.015">On the Rankin–Selberg gamma factor of simple supercuspidal representations of the unitary group for p-adic local fields</a>, Journal of Number Theory 271 (2025), 526–547.</p>
 
 <h2>Preprints</h2>
 <p>1. K. Wang and Y. Xin, On the Sp<sub>2n</sub>-distinguished spectrum of U<sub>2n</sub>, preprint, <a href="https://arxiv.org/abs/2412.05518">arXiv:2412.05518</a>.</p>
@@ -114,10 +124,6 @@ I plan to attend the following conferences:<br>
 
 <a href="miscellanous.html">Miscellanous</a>
 -->
-</div>
-  <div class="aside">
-    <img src="photo.jpeg" alt="Yu Xin">
-  </div>
 </div>
 </body>
 </html>
