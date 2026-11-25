@@ -56,6 +56,24 @@
         object-fit: cover;
         object-position: center center;
     }
+    .hero-name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+        pointer-events: none;
+    }
     .main {
         position: relative;
         z-index: 1;
@@ -73,6 +91,7 @@
 
 <div class="hero">
     <img src="background.jpg" alt="">
+    <p class="hero-name">Yu Xin</p>
 </div>
 
 <div class="main">
